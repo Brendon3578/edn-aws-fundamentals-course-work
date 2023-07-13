@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
+    <title>Olá mundo</title>
+  </head>
+  <body class="max-w-screen min-h-screen bg-slate-200">
+    <div class="flex flex-col items-center">
+      <!-- bloco amarelo -->
+      <header class="w-full">
+        <div
+          class="bg-[#ec7211] p-10 flex flex-col justify-center items-center gap-8"
+        >
+          <div class="flex flex-col gap-4 items-center">
+            <h1 class="text-white text-5xl">
+              Qual perfil profissional você busca?
+            </h1>
+            <p class="text-2xl text-white">
+              Selecione um perfil profissional você deseja contratar
+            </p>
+          </div>
+          <div class="custom-arrow">
+            <span class="icon pointer-events-none">
+              <!-- prettier-ignore -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+              <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd" />
+            </svg>
+            </span>
+            <select
+              title="Selecione um currículo"
+              name="select"
+              id="select-curriculum"
+              class="custom-arrow w-96 text-slate-800 p-2 pl-4 pr-8 text-lg block rounded-md appearance-none shadow-md focus:outline-none ring-slate-600 focus:ring-2"
+            >
+              <option selected>Escolha um perfil profissional</option>
+              <option value="anak">Ana Karolina - Desenvolvedora</option>
+              <option value="andref">Andre Felipe - Desenvolvedor</option>
+              <option value="arianem">Ariane Mota - Desenvolvedora</option>
+              <option value="ariavev">Ariane Vytoria - Desenvolvedora</option>
+              <option value="ariciap">Aricia Paiola - Desenvolvedora</option>
+              <option value="brendon">Brendon Gomes - Desenvolvedor</option>
+              <option value="brunor">Bruno Rafael - Desenvolvedor</option>
+            </select>
+          </div>
+          <!-- barra em baixo -->
+        </div>
+        <!-- prettier-ignore -->
+        <svg fill="currentColor" viewBox="0 0 32 1" xmlns="http://www.w3.org/2000/svg" class="text-[#ec7211]"><path d="M16 1C4 1 0 0 0 0H32C32 0 28 1 16 1Z"></path></svg>
+      </header>
+      <!-- curriculum -->
+      <div
+        class="-translate-y-10 shadow-lg bg-slate-800 border border-slate-700 text-white w-full md:max-w-4xl max-w-full rounded-2xl p-6"
+      >
+        <!-- <p>Selecione um perfil para mostrar um currículo</p> -->
+        <div class="flex text-xl mb-2" id="curriculum-name">
+          <a
+            class="text-amber-500 active:text-amber-300 font-semibold underline decoration-1 underline-offset-2 mr-1.5"
+            href="#"
+            target="_blank"
+          ></a>
+          <p>Selecione um currículo para ser exibido</p>
+        </div>
+        <div class="w-full flex items-center justify-center p-2">
+          <iframe
+            class="flex-1 animation"
+            src=""
+            frameborder="0"
+            id="curriculum-iframe"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/script.js"></script>
+</html>
