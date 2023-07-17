@@ -11,3 +11,5 @@ O Objetivo desse trabalho é de desenvolver um Website contendo os currículos d
 - Segurança
 - Armazenamento durável
 - Capaz de atender demanda de 11 milhões de requisições por mês
+
+Link da aplicação (do próprio github sem os currículos): <https://brendon3578.github.io/edn-aws-fundamentals-course-work/src/>
