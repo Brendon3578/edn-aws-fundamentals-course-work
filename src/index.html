@@ -7,12 +7,12 @@
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <title>Currículos - Escola da Nuvem</title>
   </head>
-  <body class="max-w-screen min-h-screen bg-slate-200">
+  <body class="flex flex-col max-w-screen min-h-screen bg-slate-200">
     <div class="flex flex-col items-center">
       <!-- bloco amarelo -->
       <header class="w-full">
         <div
-          class="bg-[#ec7211] p-10 flex flex-col justify-center items-center gap-8"
+          class="bg-gradient-to-t from-[#ec7211] to-orange-600 p-10 py-12 flex flex-col justify-center items-center gap-8"
         >
           <div class="flex flex-col gap-4 items-center">
             <h1 class="text-white text-5xl">
@@ -33,14 +33,16 @@
               title="Selecione um currículo"
               name="select"
               id="select-curriculum"
-              class="custom-arrow cursor-pointer w-96 text-slate-800 p-2 pl-4 pr-8 text-lg block rounded-md appearance-none shadow-md focus:outline-none ring-orange-700 focus:ring-2"
+              class="custom-arrow cursor-pointer w-[400px] text-slate-800 p-2 pl-4 pr-8 block rounded-md appearance-none shadow-md focus:outline-none ring-orange-700 focus:ring-2"
             >
               <option selected>Escolha um perfil profissional</option>
               <option value="anak">Ana Karolina - Desenvolvedora</option>
-              <option value="andref">Andre Felipe - Desenvolvedor</option>
+              <option value="andref">Andre Felipe - Infraestrutura</option>
               <option value="arianem">Ariane Mota - Desenvolvedora</option>
-              <option value="ariavev">Ariane Vytoria - Desenvolvedora</option>
-              <option value="ariciap">Aricia Paiola - Desenvolvedora</option>
+              <option value="arianev">
+                Ariane Vytoria - Analista de Desenvolvimento e Sistemas
+              </option>
+              <option value="ariciap">Aricia Paiola - Product Owner</option>
               <option value="brendon">Brendon Gomes - Desenvolvedor</option>
               <option value="brunor">Bruno Rafael - Desenvolvedor</option>
             </select>
@@ -60,6 +62,7 @@
             class="text-amber-500 active:text-amber-300 font-semibold underline decoration-1 underline-offset-2 mr-1.5"
             href="#"
             target="_blank"
+            title="Abrir currículo em outra página"
           ></a>
           <p>Selecione um currículo para ser exibido</p>
         </div>
@@ -69,10 +72,23 @@
             src=""
             frameborder="0"
             id="curriculum-iframe"
+            title="Currículo"
           ></iframe>
         </div>
       </div>
     </div>
+    <footer class="flex flex-1 items-end p-2">
+      <div class="text-slate-600 mx-auto font-semibold text-center text-sm">
+        <p>
+          Projeto de TCC para
+          <span class="text-sky-600">Escola da Nuvem &copy;</span>
+        </p>
+        <p>
+          Elaborado pelo Grupo 1 utilizando os serviços da
+          <span class="text-orange-600">AWS</span>
+        </p>
+      </div>
+    </footer>
   </body>
   <script src="./js/script.js"></script>
 </html>

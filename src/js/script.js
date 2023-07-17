@@ -2,15 +2,13 @@ const selectEl = document.getElementById("select-curriculum");
 const selectedCurriculumName = document.getElementById("curriculum-name");
 const curriculumIFrameEl = document.getElementById("curriculum-iframe");
 
-console.log(selectEl);
-
 const curriculums = {
   anak: { src: "" },
   andref: { src: "" },
   arianem: { src: "" },
-  ariavev: { src: "" },
-  ariciap: { src: "" },
-  brendon: { src: "./assets/curriculo/brendongomes.pdf" },
+  arianev: { src: "./assets/curriculo/CV_Ariane_Araujo.pdf" },
+  ariciap: { src: "./assets/curriculo/CV_Aricia_Paiola.pdf" },
+  brendon: { src: "./assets/curriculo/CV_Brendon_Gomes.pdf" },
   brunor: { src: "" },
 };
 
